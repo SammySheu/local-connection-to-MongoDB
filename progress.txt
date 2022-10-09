@@ -1,0 +1,8 @@
+Start the server with command 'nodemon index.js'
+
+First, go through index.html with url localhost:3000.( app.get('/') )
+
+Second, front-end submit one of Stark family name( app.post('/show')) and save data in MongoDB.( character.save() )
+Besides, redirect to /show
+
+Third, back-end receive request( app.get('/show) ). It, therefore, find characterModel from MongoDB and render show.pug with argument {nameAndID}

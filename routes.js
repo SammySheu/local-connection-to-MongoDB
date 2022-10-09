@@ -17,8 +17,6 @@ app.get('/show', async (request, response) => {
     // const characterName = Array.from(characters, x => x.name) ;
     // console.log(characterName)
     const nameAndID = tidyUp(characters) ;
-    console.log(nameAndID) ;
-    console.log(typeof nameAndID) ;
     response.render('show.pug', {nameAndID});
   } catch (error) {
     response.status(500).send(error);
@@ -38,7 +36,6 @@ function tidyUp(arrayOfObject){
 
 app.post('/show', async (request, response) => {
     const character = new characterModel(request.body);
-    console.log(character) ;
     try {
       await character.save();
       response.redirect('/show') ;
