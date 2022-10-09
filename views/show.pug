@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h1 Here to show database
+    ol
+      each item in nameAndID
+        li #{item.name} (#{item.id})
+
+    a(href='../')
+      button Back
