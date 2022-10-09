@@ -1,4 +1,9 @@
 Start the server with command 'nodemon index.js'
+Run MongoDB service with command 'mongo-start'
+Stop MongoDB service with command 'mongo-stop'
+Use Mongo Shell with command 'mongosh'
+
+Logical Thinking of Website
 
 First, go through index.html with url localhost:3000.( app.get('/') )
 
